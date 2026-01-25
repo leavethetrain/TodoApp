@@ -1,5 +1,7 @@
-function Input({}) {
-  return <input type="text" />;
+function Input({ inputValue, handleInputChangeEvent }) {
+  return (
+    <input type="text" onChange={handleInputChangeEvent} value={inputValue} />
+  );
 }
 
 export default Input;
