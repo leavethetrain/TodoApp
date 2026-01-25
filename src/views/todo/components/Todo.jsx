@@ -1,3 +1,4 @@
+import TodoHeader from "./todoheader/TodoHeader";
 import TodoItem from "./todoitem/TodoItem";
 import { useState } from "react";
 
@@ -13,8 +14,13 @@ function Todo() {
   }
   return (
     <>
+      <TodoHeader />
       {todos.map((todo) => (
-        <TodoItem todoItem={todo} handleCheckbox={handleCheckbox} />
+        <TodoItem
+          key={todo.id}
+          todoItem={todo}
+          handleCheckbox={handleCheckbox}
+        />
       ))}
     </>
   );
