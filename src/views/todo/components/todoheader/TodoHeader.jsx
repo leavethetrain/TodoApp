@@ -1,6 +1,7 @@
 import Input from "../../../../components/input/Input";
 import Button from "../../../../components/button/Button";
 import { useState } from "react";
+import "./TodoHeader.css";
 function TodoHeader({ AddTodoItemToList }) {
   const [inputValue, setInputValue] = useState("");
   function handleInputChangeEvent(event) {
@@ -12,7 +13,7 @@ function TodoHeader({ AddTodoItemToList }) {
     setInputValue("");
   }
   return (
-    <div>
+    <div className="todo-header">
       <Input
         handleInputChangeEvent={handleInputChangeEvent}
         inputValue={inputValue}

@@ -1,14 +1,11 @@
-import TodoBody from "./todobody/TodoBody";
-import TodoHeader from "./todoheader/TodoHeader";
-import TodoItem from "./todoitem/TodoItem";
-import { useState } from "react";
 import TodoList from "./todolist/TodoList";
+import "../../Todo.css";
 
 function Todo() {
   return (
-    <>
+    <div id="todo-view">
       <TodoList />
-    </>
+    </div>
   );
 }
 
