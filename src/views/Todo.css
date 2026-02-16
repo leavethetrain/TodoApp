@@ -1,4 +1,8 @@
 #todo-view {
   background-color: rgb(162, 0, 255);
   height: 100vh;
+display: flex;
+flex-direction: column;
+
+align-items: center;
 }
