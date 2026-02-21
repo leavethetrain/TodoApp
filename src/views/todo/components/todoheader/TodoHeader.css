@@ -1,6 +1,7 @@
 .todo-header {
   display: flex;
   justify-content: center;
-  gap: 5rem;
-  background-color: purple;
+  gap: 3rem;
+  
+  margin-top: 0.5rem; 
 }

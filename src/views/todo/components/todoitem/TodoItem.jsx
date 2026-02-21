@@ -21,7 +21,7 @@ function TodoItem({ todoItem, handleCheckbox, deleteTodoItemFromList }) {
         handleCheckbox={handleCheckboxEvent}
       />
       <Button
-        buttonValue={"Löschen"}
+        buttonValue={"Delete"}
         handleButtonClickEvent={handleDeleteTodoItem}
       />
     </div>

@@ -1,9 +1,14 @@
 .todo-item {
   display: flex;
-  background-color: grey;
+  background-color: #dfff;
   justify-content: space-between;
   align-items: center;
   margin: 0.5rem;
   gap: 1rem;
+  width: 380px;
+  border-radius: 5px;
+word-break: break-word;
+padding: 0.5rem;
+
 }
  
