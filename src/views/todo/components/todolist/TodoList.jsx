@@ -4,9 +4,7 @@ import { useState } from "react";
 import "./TodoList.css";
 
 function TodoList({}) {
-  const [todos, setTodos] = useState([
-    { id: Math.random(), content: "Wäsche waschen", done: false },
-  ]);
+  const [todos, setTodos] = useState([]);
 
   function handleCheckbox(todoItem) {
     const todoItemIndex = todos.findIndex((todo) => todo.id === todoItem.id);
