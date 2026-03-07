@@ -16,9 +16,9 @@ function TodoItem({ todoItem, handleCheckbox, deleteTodoItemFromList }) {
     <div className="todo-item">
       <Checkbox
         id={todoItem.id}
-        checked={todoItem.checked}
+        checked={todoItem.done}
         content={todoItem.content}
-        handleCheckbox={handleCheckboxEvent}
+        handleCheckbox={() => handleCheckbox(todoItem)}
       />
       <Button
         buttonValue={"Delete"}

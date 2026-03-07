@@ -1,3 +1,5 @@
+import "./Checkbox.css";
+
 function Checkbox({ id, checked, content, handleCheckbox }) {
   return (
     <div>
@@ -7,7 +9,9 @@ function Checkbox({ id, checked, content, handleCheckbox }) {
         checked={checked}
         onChange={handleCheckbox}
       ></input>
-      <label htmlFor={id}>{content}</label>
+      <label htmlFor={id} className={checked ? "done" : ""}>
+        {content}
+      </label>
     </div>
   );
 }
