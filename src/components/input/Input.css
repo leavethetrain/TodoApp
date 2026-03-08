@@ -3,5 +3,5 @@ input {
   border: none;
   border-radius: 6px;
   padding: 0.5rem;
-  
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }

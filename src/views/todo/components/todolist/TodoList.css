@@ -1,12 +1,12 @@
-.todo-list{
-    
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: rgb(240, 244, 128);
-    margin: 3rem;
-    width: 400px;
-    border-radius: 8px;
-    padding: 1rem;
-    gap: 1rem;
+.todo-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgb(163, 131, 236);
+  margin: 3rem;
+  width: 400px;
+  border-radius: 8px;
+  padding: 1rem;
+  gap: 1rem;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }

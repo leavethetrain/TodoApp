@@ -7,8 +7,11 @@
   gap: 1rem;
   width: 380px;
   border-radius: 5px;
-word-break: break-word;
-padding: 0.5rem;
-
+  word-break: break-word;
+  padding: 0.5rem;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
- 
+
+.todo-item:hover {
+  background-color: rgb(206, 223, 238);
+}
