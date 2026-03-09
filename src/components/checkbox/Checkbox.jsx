@@ -9,7 +9,7 @@ function Checkbox({ id, checked, content, handleCheckbox }) {
         checked={checked}
         onChange={handleCheckbox}
       ></input>
-      <label htmlFor={id} className={checked ? "done" : ""}>
+      <label htmlFor={id} className={checked ? "done" : "undone"}>
         {content}
       </label>
     </div>

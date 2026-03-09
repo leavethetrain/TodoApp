@@ -1,5 +1,6 @@
 .todo-item {
   display: flex;
+  
   background-color: #dfff;
   justify-content: space-between;
   align-items: center;
@@ -15,4 +16,12 @@
 
 .todo-item:hover {
   background-color: rgb(206, 223, 238);
+}
+
+
+@media screen and (max-width: 600px) {
+  .todo-item {
+    width: 360px;
+    
+  }
 }
