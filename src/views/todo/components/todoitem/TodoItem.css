@@ -1,27 +1,28 @@
 .todo-item {
   display: flex;
-  
-  background-color: #dfff;
   justify-content: space-between;
   align-items: center;
-  margin: 0.5rem;
-  gap: 1rem;
   width: 380px;
-  border-radius: 5px;
+  padding: 1rem;
+  background: rgba(255, 255, 255, 0.25);
+  backdrop-filter: blur(10px);
+  border-radius: 16px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  color: #000;
   word-break: break-word;
-  padding: 0.5rem;
-  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-  color: black;
+  transition: all 0.2s ease-in-out;
+  margin-bottom: 0.5rem;
 }
 
 .todo-item:hover {
-  background-color: rgb(206, 223, 238);
+  background: rgba(255, 255, 255, 0.35);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.2);
+  transform: translateY(-1px);
 }
-
 
 @media screen and (max-width: 600px) {
   .todo-item {
     width: 360px;
-    
   }
 }

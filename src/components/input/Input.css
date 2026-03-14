@@ -1,7 +1,18 @@
 input {
-  background-color: #dfff;
-  border: none;
-  border-radius: 6px;
+  background: rgba(255, 255, 255, 0.25);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 16px;
   padding: 0.5rem;
-  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+  color: #000;
+  font-size: 1rem;
+  transition: all 0.2s ease-in-out;
+}
+
+input:hover,
+input:focus {
+  background: rgba(255, 255, 255, 0.35);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.12);
+  outline: none;
 }
