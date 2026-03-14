@@ -15,6 +15,8 @@ function TodoHeader({ AddTodoItemToList }) {
   function handleAddTodoItemEvent() {
     if (inputValue.trim() === "") {
       setShowAlert(true);
+
+      return;
     }
 
     AddTodoItemToList({ id: Math.random(), content: inputValue, done: false });

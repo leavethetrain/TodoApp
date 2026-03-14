@@ -12,6 +12,9 @@
   max-height: 80vh;
 }
 
+p {
+}
+
 @media screen and (max-width: 600px) {
   .todo-list {
     width: 360px;

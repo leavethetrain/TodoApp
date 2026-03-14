@@ -1,15 +1,11 @@
-
-
-@import url('https://fonts.googleapis.com/css2?family=Caveat+Brush&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Caveat+Brush&display=swap");
 
 #todo-view {
   background-color: rgb(242, 192, 228);
   height: 100vh;
-display: flex;
-flex-direction: column;
-
-align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 h1 {

@@ -10,7 +10,7 @@ function Alert({ message, close }) {
       <div className="warning-box">
         {" "}
         <p>{message}</p>{" "}
-        <button classname="todo-button" onClick={close}>
+        <button className="todo-button" onClick={close}>
           OK
         </button>
       </div>
