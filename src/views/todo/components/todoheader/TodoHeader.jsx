@@ -2,10 +2,11 @@ import Input from "../../../../components/input/Input";
 import Button from "../../../../components/button/Button";
 import { useState } from "react";
 import "./TodoHeader.css";
-import piep from "./piep.mp3";
+import Alert from "../../../../components/alert/Alert";
+
 function TodoHeader({ AddTodoItemToList }) {
   const [inputValue, setInputValue] = useState("");
-  const [showWarning, setShowWarning] = useState(false);
+  const [showAlert, setShowAlert] = useState(false);
 
   function handleInputChangeEvent(event) {
     setInputValue(event.target.value);
@@ -13,34 +14,30 @@ function TodoHeader({ AddTodoItemToList }) {
   }
   function handleAddTodoItemEvent() {
     if (inputValue.trim() === "") {
-      setShowWarning(true);
-
-      const audio = new Audio(piep);
-      audio.play();
-      return;
+      setShowAlert(true);
     }
 
     AddTodoItemToList({ id: Math.random(), content: inputValue, done: false });
     setInputValue("");
   }
   return (
-    <div className="todo-header">
-      {showWarning && (
-        <div className="warning-overlay">
-          <div className="warning-box">
-            <p>Bitte Todo eingeben</p>
-            <button onClick={() => setShowWarning(false)}>OK</button>
-          </div>
-        </div>
+    <div>
+      <div className="todo-header">
+        <Input
+          handleInputChangeEvent={handleInputChangeEvent}
+          inputValue={inputValue}
+        />
+        <Button
+          buttonValue={"Add"}
+          handleButtonClickEvent={handleAddTodoItemEvent}
+        />
+      </div>
+      {showAlert && (
+        <Alert
+          message="Bitte Todo eingeben"
+          close={() => setShowAlert(false)}
+        />
       )}
-      <Input
-        handleInputChangeEvent={handleInputChangeEvent}
-        inputValue={inputValue}
-      />
-      <Button
-        buttonValue={"Add"}
-        handleButtonClickEvent={handleAddTodoItemEvent}
-      />
     </div>
   );
 }
