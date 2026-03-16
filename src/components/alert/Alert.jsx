@@ -1,20 +1,17 @@
+import { createPortal } from "react-dom";
 import "./Alert.css";
-import piep from "./piep.mp3";
 
 function Alert({ message, close }) {
-  const audio = new Audio(piep);
-  audio.play();
-
-  return (
+  return createPortal(
     <div className="warning-overlay">
       <div className="warning-box">
-        {" "}
-        <p>{message}</p>{" "}
+        <p>{message}</p>
         <button className="todo-button" onClick={close}>
           OK
         </button>
       </div>
-    </div>
+    </div>,
+    document.body,
   );
 }
 
