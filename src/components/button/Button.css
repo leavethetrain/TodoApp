@@ -29,7 +29,7 @@ button.add:hover {
   box-shadow: 0 6px 20px rgba(0, 0, 0, 0.12);
 }
 
-button.delete:hover {
-  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.12);
-  border-radius: 20px;
+button.delete svg:hover {
+  width: 1.3rem;
+  height: 1.3rem;
 }
