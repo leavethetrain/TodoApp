@@ -32,6 +32,7 @@ function TodoHeader({ AddTodoItemToList }) {
         <Button
           buttonValue={"Add"}
           handleButtonClickEvent={handleAddTodoItemEvent}
+          className="add"
         />
       </div>
       {showAlert && (

@@ -4,7 +4,7 @@ import "../../Todo.css";
 function Todo() {
   return (
     <div id="todo-view">
-      <h1>ToDo Liste</h1>
+      <h1>Todo App</h1>
       <TodoList />
     </div>
   );

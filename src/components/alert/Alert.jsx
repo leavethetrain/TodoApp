@@ -6,7 +6,7 @@ function Alert({ message, close }) {
     <div className="warning-overlay">
       <div className="warning-box">
         <p>{message}</p>
-        <button className="todo-button" onClick={close}>
+        <button className="add" onClick={close}>
           OK
         </button>
       </div>
